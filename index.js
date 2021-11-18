@@ -46,6 +46,6 @@ window.onload = ()=>{
     };
     
     if( isMobile.any() ){
-        document.body.innerHTML = '<div id="magic" style="height: 100%;"><h2 style="transform: none">Page not available for phone</h2></div>';
+        document.body.innerHTML = '<div id="magic" style="height: 100%;"><h2 style="transform: none; font-size: 3em;">Page not available for phone</h2></div>';
     };
 }
