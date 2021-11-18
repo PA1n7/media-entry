@@ -5,4 +5,23 @@ window.onload = ()=>{
     for(let i=0; i<testText.length; i++){
         testText[i].innerHTML = lorem;
     }
+    let showmorebutton = document.getElementsByClassName("showmore");
+    let currState = {}
+    for(let i=0; i<showmorebutton.length; i++){
+        showmorebutton[i].getElementsByClassName("more")[0].style.visibility = "hidden";
+        showmorebutton[i].getElementsByClassName("more")[0].style.position = "absolute";
+        currState[i] = false;
+        showmorebutton[i].onclick = ()=>{
+            if (currState[i]){
+                showmorebutton[i].getElementsByClassName("more")[0].style.visibility = "hidden";
+                showmorebutton[i].getElementsByClassName("more")[0].style.position = "absolute";
+                showmorebutton[i].getElementsByClassName("normal")[0].innerText = "Show more...";
+            }else{
+                showmorebutton[i].getElementsByClassName("more")[0].style.visibility = "visible";
+                showmorebutton[i].getElementsByClassName("more")[0].style.position = "relative";
+                showmorebutton[i].getElementsByClassName("normal")[0].innerText = "Show less...";
+            }
+            currState[i] = !currState[i]
+        }
+    }
 }
