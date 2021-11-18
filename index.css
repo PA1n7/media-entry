@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    color: var(--mrwhite);
 }
 
 :root {
@@ -51,6 +52,7 @@ header a {
     color: var(--mrwhite);
     font-size: 1.75em;
     padding: 0 10px 0 10px;
+    margin-top: 5px;
     text-decoration: none;
 }
 
@@ -61,6 +63,7 @@ header a:hover {
 #body {
     width: 100%;
     /* padding-left: 10px; */
+    padding-bottom: 15px;
 }
 #body .work{
     width: 100%;
@@ -86,4 +89,78 @@ header a:hover {
 
 .work p{
     font-size: 1.5em;
+}
+
+#poster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+}
+
+#poster img {
+    width: 35%;
+}
+
+.description h2{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+
+.description p{
+    font-size: 1.75em;
+}
+
+.description {
+    width: 75%;
+}
+
+footer {
+    background-color: var(--bluesky);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#signature {
+    position: fixed;
+    z-index: 1001;
+    width: 2vw;
+    padding-left: 0.25vw;
+    padding-top: 0.5vh;
+}
+
+#pp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#pp img {
+    width: 35%;
+    border-radius: 50%;
+}
+
+#aboutme h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+#aboutme p{
+    text-align: center;
+    font-size: 2.25em;
+    width: 75%;
+}
+
+video {
+    width: 75%;
+}
+
+.button:hover {
+    color: var(--bluesky);
+    transition: all ease-out 0.3s;
+}
+
+.button {
+    transition: all ease-out 0.3s;
 }

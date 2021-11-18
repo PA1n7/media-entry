@@ -49,3 +49,13 @@ window.onload = ()=>{
         document.body.innerHTML = '<div id="magic" style="height: 100%;"><h2 style="transform: none; font-size: 3em;">Page not available for phone</h2></div>';
     };
 }
+
+function play(){
+    if(document.body.querySelector("video").paused){
+        document.body.querySelector("video").play();
+        document.getElementById("playbutton").innerText = "Pause";
+    }else{
+        document.body.querySelector("video").pause();
+        document.getElementById("playbutton").innerText = "Play";
+    }
+}
