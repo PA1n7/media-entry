@@ -22,7 +22,7 @@ body {
     position: absolute;
     color: var(--mrwhite);
     font-size: 7em;
-    transform: translateY(-200%);
+    top: 1em;
 }
 
 #magic{
