@@ -24,6 +24,12 @@ window.onload = ()=>{
             currState[i] = !currState[i]
         }
     }
+    let fakelinks = document.querySelectorAll("label");
+    for (let i=0; i<fakelinks.length; i++){
+        fakelinks[i].onclick = ()=>{
+            window.open(fakelinks[i].id, "_blank");
+        }
+    }
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
