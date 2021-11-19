@@ -2,9 +2,10 @@
  Portafolio of all my work
 
 # TODO
- - Create poster for comitee
+ - ~~create poster for comitee~~
  - Create animated video
  - Add actual descriptions to the images
+ - Make actual about me text
  - Add more images
  - Create more images
 
