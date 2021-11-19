@@ -11,7 +11,7 @@ window.onload = ()=>{
         showmorebutton[i].getElementsByClassName("more")[0].style.visibility = "hidden";
         showmorebutton[i].getElementsByClassName("more")[0].style.position = "absolute";
         currState[i] = false;
-        showmorebutton[i].onclick = ()=>{
+        showmorebutton[i].getElementsByClassName("normal")[0].onclick = ()=>{
             if (currState[i]){
                 showmorebutton[i].getElementsByClassName("more")[0].style.visibility = "hidden";
                 showmorebutton[i].getElementsByClassName("more")[0].style.position = "absolute";
@@ -54,14 +54,4 @@ window.onload = ()=>{
     if( isMobile.any() ){
         document.body.innerHTML = '<div id="magic" style="height: 100%;"><h2 style="transform: none; font-size: 3em;">Page not available for phone</h2></div>';
     };
-}
-
-function play(){
-    if(document.body.querySelector("video").paused){
-        document.body.querySelector("video").play();
-        document.getElementById("playbutton").innerText = "Pause";
-    }else{
-        document.body.querySelector("video").pause();
-        document.getElementById("playbutton").innerText = "Play";
-    }
 }
