@@ -3,7 +3,7 @@
 
 # TODO
  - ~~create poster for comitee~~
- - Create animated video
+ - ~~Create animated video~~
  - ~~Add actual descriptions to the images~~
  - ~~Make actual about me text~~
  - ~~Add more images~~
