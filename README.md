@@ -1,5 +1,5 @@
 # portafolio
- Portafolio of all my work
+ Design Portafolio
 
 # TODO
  - ~~Fine detailing~~
